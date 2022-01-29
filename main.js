@@ -21,7 +21,9 @@ createButtons();
 function createButtons(){
     for (let i=0;i<metody.length;i++){
         const button = document.createElement("button")
-        button.innerText = metody[i][1]
+        button.innerText = metody[i][1];
+        button.type="button";
+        button.className="btn btn-primary w-50";
         const x = i;
         button.addEventListener("click", buttonPress)
         button.addEventListener("click", function(){desc.innerText = metody[x][0]})
